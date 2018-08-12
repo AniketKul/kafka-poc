@@ -1,0 +1,5 @@
+[2018-08-12 13:33:49,283] DEBUG preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@66d3c617, name=log4j:logger=kafka.controller (kafka.controller)
+[2018-08-12 13:35:28,571] INFO [ControllerEventThread controllerId=0] Starting (kafka.controller.ControllerEventManager$ControllerEventThread)
+[2018-08-12 13:35:28,592] DEBUG [Controller id=0] Broker 1001 has been elected as the controller, so stopping the election process. (kafka.controller.KafkaController)
+[2018-08-12 13:38:01,364] INFO [ControllerEventThread controllerId=1] Starting (kafka.controller.ControllerEventManager$ControllerEventThread)
+[2018-08-12 13:38:01,384] DEBUG [Controller id=1] Broker 1001 has been elected as the controller, so stopping the election process. (kafka.controller.KafkaController)
