@@ -34,3 +34,27 @@ In terminal, do ```ps ef | grep kafka```
 and check if you see config/zookeeper.properties, config/server.properties and config/server2.properties in the terminal.
 
 #Creating a topic:
+
+```
+bin/kafka-topics.sh --zookeeper localhost:2181 --create --topic first --partitions 2 --replication-factor 2
+```
+#Describing a topic:
+
+```
+bin/kafka-topics.sh --zookeeper localhost:2181 --describe --topic first
+```
+
+#Creating a producer:
+
+```
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic first
+```
+
+#Creating a consumer:
+```
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic first
+```
+```
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic first --from-beginning
+```
+
